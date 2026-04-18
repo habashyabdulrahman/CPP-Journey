@@ -31,4 +31,4 @@ This repository is organized by course modules. Each folder contains the source 
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/CPP-Journey.git](https://github.com/YOUR_USERNAME/CPP-Journey.git)
+   git clone [https://github.com/habashyabdulrahman/CPP-Journey](https://github.com/habashyabdulrahman/CPP-Journey)
