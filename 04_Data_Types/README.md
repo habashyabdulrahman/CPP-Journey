@@ -21,6 +21,10 @@ This module marks the beginning of my deep dive into C++ fundamentals. Here, I e
 | **[HW 8](./homework_8/)** | Math-Based Logic | Using the "Multiplier Switch" to replace `if` conditions. |
 | **[HW 9](./homework_9/)** | Gauss Summation | Calculating the sum of numbers from 1 to N using O(1) formula. |
 
+## 🏆 Extra Practice (Competitive Programming)
+Alongside the course homework, I apply these concepts on platforms like Codeforces.
+- **[Codeforces - Difference](./Codeforces_Practice/01_Difference/)**: Handled potential memory overflow issues using `long long` when multiplying large constraints (up to 10^5).
+
 ---
 
 ## 🧪 Key Technical Takeaway: Overflow
