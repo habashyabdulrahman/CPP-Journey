@@ -16,7 +16,9 @@ This repository is organized by course modules. Each folder contains the source 
 
 ## 🛠️ Tech Stack & Tools
 * **Language:** C++17
-* **Compiler:** MinGW / GCC
+* **OS:** Kubuntu (Linux)
+* **Compiler:** GCC
+* **Terminal:** Bash / Zsh
 * **IDE:** VS Code
 * **Version Control:** Git & GitHub
 
