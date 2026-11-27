@@ -1,51 +1,65 @@
 # Homework 2: Students Grades System 🎓
 
 ## 📝 Description
-A simple program requested by a teacher to read and store the information of two students for a Math exam, and then print this information back to the console.
+A C++ console application that reads and stores Math exam records for **15 students**, displays a formatted summary of all students, and calculates the average grade for boys, girls, and the entire class.
 
 ## 🎯 Requirements
-Read the following details for **two students**:
+Read the following details for **15 students**:
 1. **Name**
 2. **ID** (Student ID)
-3. **Grade** (Math exam score)
+3. **Gender** (`male` / `female`)
+4. **Math Exam Grade**
 
-After reading both students' data, print them clearly on the screen.
+After reading all inputs:
+- Print a structured report of every student's details.
+- Calculate and display:
+  - Average grade for boys
+  - Average grade for girls
+  - Overall class average
 
 ---
 
-## 🏗️ Architecture & Data Types Analysis (Crucial Step)
-As a good software engineer, NEVER assume data types blindly. Analyze each input:
+## 🏗️ Architecture & Data Types Analysis
 
-### 1. Name
-- Needs to store text (words/characters).
-- **Selected Type:** `[Think about it]`
+### 1. Name & Gender
+- Both store text values (words/characters).
+- **Selected Type:** `string`
 
 ### 2. Student ID
-- IDs are usually numbers, BUT:
-  - Can an ID start with zero? (e.g., `01234`)
-  - Are we going to perform math operations (+, -, *, /) on an ID? No.
-  - Can it be larger than 2 billion (`2147483647`)? Yes.
-- **Selected Type:** `[Think about it]`
+- Used here as simple sequential numbers (`1` to `15`).
+- **Selected Type:** `int` *(Note: in larger real-world systems, `string` is often preferred if IDs can contain leading zeros like `01234` or exceed integer limits).*
 
-### 3. Math Grade
-- *Teacher's Hint: "Is exam’s grade an integer?"*
-- No! A student can score `95.5` or `80.25`. If we use `int`, the computer will truncate the decimal part (e.g., `95.5` becomes `95`), which means the student loses marks!
-- **Selected Type:** `[Think about it]`
+### 3. Math Grade & Averages
+- Grades and averages can include decimals (e.g., `59.5`, `44.875`). Using `int` would truncate the decimal part and cause inaccurate results.
+- **Selected Type:** `double`
 
 ---
 
-## 💻 My Solution
-// Space to write your C++ code
+## ⚙️ How to Compile & Run
 
+```bash
+g++ homework2_2.cpp -o homework2_2
+./homework2_2
+```
+
+---
+
+## 💻 Sample Output
+
+```text
 What is student 1 name: Ahmed
-His ID: 01
-His math exam grade: 30.4
-
-What is student 2 name: Ali
-His ID: 02
-His math exam grade: 70.6
-
-Students grades in math. 
-Ahmed (with id 01) got grade: 30.4
-Ali (with id 02) got grade: 70.6
-Average grade is 50.5
+Id: 1
+Gender: male
+Math exam grade: 59.5
+------------------
+... (continues for all 15 students) ...
+------------------
+Students grades in math
+Ahmed (with id: 1) gender is: male got grade: 59.5
+Mona (with id: 2) gender is: female got grade: 58
+...
+Jak (with id: 15) gender is: male got grade: 27.5
+Average grade for boys is: 44.875
+Average grade for girls is: 47.7143
+Average grade is: 46.2
+```
