@@ -5,84 +5,12 @@ int main()
 {
 
     // DataTypes
-    string name_1;
-    int id_1;
-    string gender_1;
-    double grade_1;
+    string name_1, name_2, name_3, name_4, name_5, name_6, name_7, name_8, name_9, name_10, name_11, name_12, name_13, name_14, name_15;
+    int id_1, id_2, id_3, id_4, id_5, id_6, id_7, id_8, id_9, id_10, id_11, id_12, id_13, id_14, id_15;
+    char gender_1, gender_2, gender_3, gender_4, gender_5, gender_6, gender_7, gender_8, gender_9, gender_10, gender_11, gender_12, gender_13, gender_14, gender_15;
+    double grade_1, grade_2, grade_3, grade_4, grade_5, grade_6, grade_7, grade_8, grade_9, grade_10, grade_11, grade_12, grade_13, grade_14, grade_15;
 
-    string name_2;
-    int id_2;
-    string gender_2;
-    double grade_2;
-
-    string name_3;
-    int id_3;
-    string gender_3;
-    double grade_3;
-
-    string name_4;
-    int id_4;
-    string gender_4;
-    double grade_4;
-
-    string name_5;
-    int id_5;
-    string gender_5;
-    double grade_5;
-
-    string name_6;
-    int id_6;
-    string gender_6;
-    double grade_6;
-
-    string name_7;
-    int id_7;
-    string gender_7;
-    double grade_7;
-
-    string name_8;
-    int id_8;
-    string gender_8;
-    double grade_8;
-
-    string name_9;
-    int id_9;
-    string gender_9;
-    double grade_9;
-
-    string name_10;
-    int id_10;
-    string gender_10;
-    double grade_10;
-
-    string name_11;
-    int id_11;
-    string gender_11;
-    double grade_11;
-
-    string name_12;
-    int id_12;
-    string gender_12;
-    double grade_12;
-
-    string name_13;
-    int id_13;
-    string gender_13;
-    double grade_13;
-
-    string name_14;
-    int id_14;
-    string gender_14;
-    double grade_14;
-
-    string name_15;
-    int id_15;
-    string gender_15;
-    double grade_15;
-
-    double average_boys;
-    double average_girls;
-    double average;
+    double boys_sum, girls_sum, average_boys, average_girls, average;
 
     // Student 1
     cout << "What is student 1 name: ";
@@ -91,7 +19,7 @@ int main()
     cout << "Id: ";
     cin >> id_1;
     
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_1;
     
     cout << "Math exam grade: ";
@@ -106,7 +34,7 @@ int main()
     cout << "Id: ";
     cin >> id_2;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_2;
 
     cout << "Math exam grade: ";
@@ -121,7 +49,7 @@ int main()
     cout << "Id: ";
     cin >> id_3;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_3;
 
     cout << "Math exam grade: ";
@@ -136,7 +64,7 @@ int main()
     cout << "Id: ";
     cin >> id_4;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_4;
 
     cout << "Math exam grade: ";
@@ -151,7 +79,7 @@ int main()
     cout << "Id: ";
     cin >> id_5;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_5;
 
     cout << "Math exam grade: ";
@@ -166,7 +94,7 @@ int main()
     cout << "Id: ";
     cin >> id_6;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_6;
 
     cout << "Math exam grade: ";
@@ -181,7 +109,7 @@ int main()
     cout << "Id: ";
     cin >> id_7;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_7;
 
     cout << "Math exam grade: ";
@@ -196,7 +124,7 @@ int main()
     cout << "Id: ";
     cin >> id_8;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_8;
 
     cout << "Math exam grade: ";
@@ -211,7 +139,7 @@ int main()
     cout << "Id: ";
     cin >> id_9;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_9;
 
     cout << "Math exam grade: ";
@@ -226,7 +154,7 @@ int main()
     cout << "Id: ";
     cin >> id_10;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_10;
 
     cout << "Math exam grade: ";
@@ -241,7 +169,7 @@ int main()
     cout << "Id: ";
     cin >> id_11;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_11;
 
     cout << "Math exam grade: ";
@@ -256,7 +184,7 @@ int main()
     cout << "Id: ";
     cin >> id_12;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_12;
 
     cout << "Math exam grade: ";
@@ -271,7 +199,7 @@ int main()
     cout << "Id: ";
     cin >> id_13;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_13;
 
     cout << "Math exam grade: ";
@@ -286,7 +214,7 @@ int main()
     cout << "Id: ";
     cin >> id_14;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_14;
 
     cout << "Math exam grade: ";
@@ -301,7 +229,7 @@ int main()
     cout << "Id: ";
     cin >> id_15;
 
-    cout << "Gender: ";
+    cout << "Gender (M/F): ";
     cin >> gender_15;
 
     cout << "Math exam grade: ";
@@ -327,9 +255,12 @@ int main()
     cout << name_14 << " (with id: " << id_14 << ") gender is: " << gender_14 << " got grade: " << grade_14 << endl;
     cout << name_15 << " (with id: " << id_15 << ") gender is: " << gender_15 << " got grade: " << grade_15 << endl;
 
-    average_boys = (grade_1 + grade_4 + grade_6 + grade_7 + grade_10 + grade_11 + grade_14 + grade_15) / 8;
-    average_girls = (grade_2 + grade_3 + grade_5 + grade_8 + grade_9 + grade_12 + grade_13) / 7;
-    average = (grade_1 + grade_2 + grade_3 + grade_4 + grade_5 + grade_6 + grade_7 + grade_8 + grade_9 + grade_10 + grade_11 + grade_12+ grade_13 + grade_14 + grade_15) / 15;
+    boys_sum = (grade_1 + grade_4 + grade_6 + grade_7 + grade_10 + grade_11 + grade_14 + grade_15) ;
+    girls_sum = (grade_2 + grade_3 + grade_5 + grade_8 + grade_9 + grade_12 + grade_13) ;
+
+    average_boys = boys_sum / 8.0;
+    average_girls = girls_sum / 7.0;
+    average = (boys_sum + girls_sum) / 15.0;
 
     cout << "Average grade for boys is: " << average_boys <<endl;
     cout << "Average grade for garls is: " << average_girls << endl;
